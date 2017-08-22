@@ -1,0 +1,19 @@
+﻿{
+	"disabled": true,
+	"bindings": [
+		{
+			"name": "myTimer",
+			"type": "timerTrigger",
+			"direction": "in",
+			"schedule": "0 * * * * *"
+		},
+		{
+			"name": "outputSbEmailQueue",
+			"queueName": "emailqueue",
+			"connection": "serviceBusSend",
+			"accessRights": "Send",
+			"type": "serviceBus",
+			"direction": "out"
+		}
+	]
+}

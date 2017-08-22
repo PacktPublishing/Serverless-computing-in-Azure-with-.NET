@@ -1,0 +1,13 @@
+﻿{
+  "disabled": false,
+  "bindings": [
+    {
+      "name": "emailBody",
+      "type": "serviceBusTrigger",
+      "direction": "in",
+      "queueName": "emailqueue",
+      "connection": "serviceBus",
+      "accessRights": "Listen"
+    }
+  ]
+}

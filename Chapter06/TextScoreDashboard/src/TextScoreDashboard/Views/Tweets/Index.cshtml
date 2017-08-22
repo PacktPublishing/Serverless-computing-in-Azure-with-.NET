@@ -1,0 +1,28 @@
+﻿@model IEnumerable<TextScoreDashboard.Models.TweetTextScore>
+@{
+    ViewBag.Title = "Tweet Scores";
+}
+<h2>Tweet Scores</h2>
+<div class="main-content">
+    <table class="table">
+        <tr>
+            <th>Username</th>
+            <th>Tweet Text</th>
+            <th>Score</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(m => item.Username)
+                </td>
+                <td>
+                    @Html.DisplayFor(m => item.TweetText)
+                </td>
+                <td>
+                    @Html.DisplayFor(m => item.TextSentimentScore)
+                </td>
+            </tr>
+        }
+    </table>
+</div>

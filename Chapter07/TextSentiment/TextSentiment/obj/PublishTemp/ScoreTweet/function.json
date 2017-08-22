@@ -1,0 +1,24 @@
+﻿{
+	"disabled": false,
+	"bindings": [
+		{
+			"type": "httpTrigger",
+			"direction": "in",
+			"webHookType": "genericJson",
+			"name": "req"
+		},
+		{
+			"type": "http",
+			"direction": "out",
+			"name": "res"
+		},
+		{
+			"type": "apiHubTable",
+			"name": "outputTable",
+			"dataSetName": "default",
+			"tableName": "TweetTextScore",
+			"connection": "azureSQL",
+			"direction": "out"
+		}
+	]
+}

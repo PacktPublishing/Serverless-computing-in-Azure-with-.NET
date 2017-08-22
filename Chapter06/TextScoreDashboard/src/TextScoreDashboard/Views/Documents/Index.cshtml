@@ -1,0 +1,28 @@
+﻿@model IEnumerable<TextScoreDashboard.Models.DocumentTextScore>
+@{
+    ViewBag.Title = "Document Scores";
+}
+<h2>Document Scores</h2>
+<div class="main-content">
+    <table class="table">
+        <tr>
+            <th>Document Name</th>
+            <th>Date</th>
+            <th>Score</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(m => item.DocumentName)
+                </td>
+                <td>
+                    @Html.DisplayFor(m => item.Date)
+                </td>
+                <td>
+                    @Html.DisplayFor(m => item.TextSentimentScore)
+                </td>
+            </tr>
+        }
+    </table>
+</div>
