@@ -84,6 +84,4 @@ Visual Studio 2017 IDE (any edition)
 
 * [Designing Azure Solutions](https://www.packtpub.com/virtualization-and-cloud/designing-azure-solutions?utm_source=github&utm_medium=repository&utm_campaign=9781786468659)
 
-### Suggestions and Feedback
-[Click here](https://docs.google.com/forms/d/e/1FAIpQLSe5qwunkGf6PUvzPirPDtuy1Du5Rlzew23UBp2S-P3wB-GcwQ/viewform) if you have any feedback or suggestions.
 >>>>>>> origin/master
